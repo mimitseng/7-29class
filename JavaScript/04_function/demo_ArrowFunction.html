@@ -7,14 +7,19 @@
     <div id="debug"></div>
     <script>
     
-        // function test (a) {
-        //     return a + 1;
-        // }
+        function test (a) {    //function + function名稱 (參數 , 參數2....) {需要計算結果return回傳}
+            return a + 1;
+        }
+
+        function time(){          //time(); 
+            alert (Date()) }      //function time(){ alert (Date()) } 可以先呼叫副程式或先副程式再呼叫                     
+        time();            
         
-        // var test = function (a) {
-        //     return a + 1;
-        // }
-        
+        var test = function () {  //將function存給一個記憶體  這種寫法就必須先定義才呼叫
+            alert ("Hello!") 
+        }
+        test();
+
         // var test = (a) => {
         //     return a + 1;
         // }        

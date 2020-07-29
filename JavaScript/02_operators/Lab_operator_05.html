@@ -43,13 +43,13 @@ $(document).ready(function () {
     $("#okButton").on('click', function () {
         var x = 0.1;
         var y = 0.2;
-        z = x + y;
+        z = x + y;  //會有浮點數誤差 結果會是0.30000.....
         report.innerHTML += `z = ${z} <br>`;
 
         var x = 0.1;
         var y = 0.2;
-        z = (x * 10000 + y * 10000) / 10000;
-        report.innerHTML += `z = ${z} <br>`;
+        z = (x * 10000 + y * 10000) / 10000;  //括號優先->先乘除後加減
+        report.innerHTML += `z = ${z} <br>`; //解決浮點數誤差方
 
     })
 

@@ -45,13 +45,13 @@ $(document).ready(function () {
         var x = 12;
         var y = "34";
         z = x.toString() + y;
-        // z = x + y;
+        // z = x + y;  會將X轉成字串 其結果為1234
         report.innerHTML += `z = ${z} <br>`;
 
         var x = 12;
         var y = "34";
-        z = x - Number(y);
-        // z = x - y;
+        z = x - Number(y);  
+        // z = x - y;  會將Y嘗試轉成數字 其為12-34=-22
         report.innerHTML += `z = ${z} <br>`;
 
     })

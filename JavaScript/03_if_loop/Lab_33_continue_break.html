@@ -49,7 +49,7 @@ $(document).ready(function () {
         while (i <= 5) {
             if (i == 4) {
                 i += 1;
-                continue;
+                continue;  //跳出此階層
             }
             line = line + i.toString();
             i = i + 1;
@@ -62,7 +62,7 @@ $(document).ready(function () {
         while (i <= 5) {
             if (i == 4) {
                 i += 1;
-                break;
+                break; //跳出此迴圈
             }
             line = line + i.toString();
             i = i + 1;
