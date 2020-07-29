@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="debug">...</div>
+
+<!-- <script>
+    var person = {
+        firstName : "Jeremy",
+        lastName : "Lin",
+        height: 190
+    }
+    // debug.innerText =person.firstName;
+    person.number =7;
+    debug.innerText =person.number;
+</script>      -->
+
+<!--以下為另一個例子 -->
+
+<script>
+var playeerList =[
+    {name: "Jeter" , number : 2},   //為陣列也是一個物件
+    {name: "Lin" , number : 7},
+    {name: "Wamg" , number : 40},
+]
+    var s = JSON.stringify(playeerList);
+    var s2 ='[{"name":"Jeter","number":2}{"name":"Lin","number":7}]';
+    var dataList2 =JSON.parse(s);
+    debug.innerText= dataList2[0].name;
+
+
+</script>
+</body>
+</html>
